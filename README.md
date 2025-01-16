@@ -21,9 +21,12 @@
 
 3. Train the Model
 
-python train.py --dataset_name data_218_hypertension_longer --name hypertension_lr0.01_epoch60 --lr 0.01 --checkpoints_dir ./output/checkpoints --optimizer adam --epoch 60 --batch_size 16 --dataroot ./datasets/data_218_hypertension_longer --save_epoch_freq 20
+    # Note: The file data.py is missing in the current dataset folder. 'data.py' stores the original data, which is not currently available due to privacy concerns. If you have any requirements, please contact me 'ltpang@stu.ecnu.edu.cn'.
 
-4. Evaluate the Model
+    python train.py --dataset_name data_218_hypertension_longer --name hypertension_lr0.01_epoch60 --lr 0.01 --checkpoints_dir ./output/checkpoints --optimizer adam --epoch 60 --batch_size 16 --dataroot ./datasets/data_218_hypertension_longer --save_epoch_freq 20
 
-python eval.py --dataset_name data_218_hypertension_longer --name hypertension_lr0.01_epoch60 --lr 0.01 --checkpoints_dir ./output/checkpoints --optimizer adam --epoch 60 --batch_size 16 --dataroot ./datasets/data_218_hypertension_longer --save_epoch_freq 20 --load ./output/checkpoints/data_218_hypertension_longer/hypertension_lr0.001_epoch60/resnet18_focal_best.pth
+5. Evaluate the Model
+    # Note: The file data.py is missing in the current dataset folder. 'data.py' stores the original data, which is not currently available due to privacy concerns. If you have any requirements, please contact me 'ltpang@stu.ecnu.edu.cn'.
+   
+    python eval.py --dataset_name data_218_hypertension_longer --name hypertension_lr0.01_epoch60 --lr 0.01 --checkpoints_dir ./output/checkpoints --optimizer adam --epoch 60 --batch_size 16 --dataroot ./datasets/data_218_hypertension_longer --save_epoch_freq 20 --load ./output/checkpoints/data_218_hypertension_longer/hypertension_lr0.001_epoch60/resnet18_focal_best.pth
 
